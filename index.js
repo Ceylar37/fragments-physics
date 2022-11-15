@@ -54,6 +54,9 @@ window.addEventListener('load', () => {
       this.setMouseRad(newRad)
       this.setFriction(newFriction)
       field.init()
+      menu[0].value = config.partSize
+      menu[1].value = config.mouseRad / 1000
+      menu[2].value = config.friction * 100
     }
   }
   menu[0].value = config.partSize
